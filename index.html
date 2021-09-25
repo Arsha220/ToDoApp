@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ToDo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+        
+        </script>
+        <h1>TODO App</h1>
+        <section class="container-fluid">
+            <section class="row justify-content-center">
+              <section class="col-12 col-sm-6 col-md-4">
+                <form class="form-container" onsubmit="return validate(display)">
+                <div class="form-group">
+                  <h4 class="text-center font-weight-bold"> Login </h4>
+                  <label for="InputUser1">Username</label>
+                   <input type="text" class="form-control" id="user" aria-describeby="userHelp" placeholder="Enter username" onkeyup="usercheck()">
+                   <label id="user1"></label>
+                   <br>
+                   <label for="error" id="error"></label>
+                  </div>
+                <div class="form-group">
+                  <label for="InputPassword1">Password</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Password" onkeyup="passcheck">
+                  <label id="pwd1"></label>
+                  <br>
+                  <label for="error1" id="error1"></label>
+                </div>
+                
+                <button type="submit" class="btn btn-light btn-block">Login
+                </button>
+                </form>
+              </section>
+            </section>
+          </section>
+          <script src="todo.js"></script>
+    </body>
+</html>
