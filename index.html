@@ -21,7 +21,7 @@
         <section class="container-fluid">
             <section class="row justify-content-center">
               <section class="col-12 col-sm-6 col-md-4">
-                <form class="form-container" onsubmit="return validate(display)">
+                <form class="form-container" onsubmit="return display();">
                 <div class="form-group">
                   <h4 class="text-center font-weight-bold"> Login </h4>
                   <label for="InputUser1">Username</label>
@@ -32,7 +32,7 @@
                   </div>
                 <div class="form-group">
                   <label for="InputPassword1">Password</label>
-                  <input type="password" class="form-control" id="pwd" placeholder="Password" onkeyup="passcheck">
+                  <input type="password" class="form-control" id="pwd" placeholder="Password" onkeyup="passcheck()">
                   <label id="pwd1"></label>
                   <br>
                   <label for="error1" id="error1"></label>
@@ -44,6 +44,6 @@
               </section>
             </section>
           </section>
-          <script src="todo.js"></script>
+          <script src="js/todo.js"></script>
     </body>
 </html>
